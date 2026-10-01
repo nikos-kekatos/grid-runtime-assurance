@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the chapter."
+title: "From Measurement to Enforcement in IoT-Instrumented Distribution Grids: code and harnesses"
+authors:
+  - family-names: Kekatos
+    given-names: Nikolaos
+  - family-names: Basagiannis
+    given-names: Stylianos
+  - family-names: Katsaros
+    given-names: Panagiotis
+  - family-names: Lekidis
+    given-names: Alexios
+  - family-names: Petridou
+    given-names: Sophia
+license: MIT
+preferred-citation:
+  type: book-chapter
+  title: "From Measurement to Enforcement in IoT-Instrumented Distribution Grids"
+  authors:
+    - family-names: Kekatos
+      given-names: Nikolaos
+    - family-names: Basagiannis
+      given-names: Stylianos
+    - family-names: Katsaros
+      given-names: Panagiotis
+    - family-names: Lekidis
+      given-names: Alexios
+    - family-names: Petridou
+      given-names: Sophia
+  year: 2026

@@ -1,0 +1,13 @@
+in op : Events[Float]
+def B : Int = 12
+def WIN : Float = 86400.0
+def hist : Events[List[Float]] =
+  fold(op, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= B + 1 then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+def span : Events[Float] = slift1(hist, (h: List[Float]) =>
+  if List.size(h) <= B then WIN *. 2.0
+  else List.last(h) -. List.head(h))
+def verdict : Events[Int] = slift1(span, (s: Float) =>
+  if s <=. WIN then 3 else 0)
+out verdict

@@ -1,0 +1,80 @@
+==========================================================================
+1. REACHABILITY vs STATIC FEEDER LIST, under reconfiguration
+==========================================================================
+  trials with reconfiguration: 400
+  static MISSES a real violation :  327/400 =  81.8%   Wilson95 [77.7, 85.2]
+  static FALSELY flags a legal one:    0/400 =   0.0%   Wilson95 [0.0, 1.0]
+  agrees with reachability        :   73/400 =  18.2%
+  A precomputed 'which DERs are on this feeder' list goes stale the
+  moment a switch moves; the reachability query does not.
+
+==========================================================================
+2. k-ANONYMITY AS phi_Sigma  (k = 5)
+==========================================================================
+  detection of disclosing aggregates : 211/211 = 100.0%
+  false positives on legal aggregates: 0/189 =   0.0%
+  Unlike the lexical cue matcher the mission instantiation used, this
+  is a computable property: exact by construction, not a heuristic.
+
+==========================================================================
+3. EVIDENCE COMPLETENESS UNDER TELEMETRY LOSS
+==========================================================================
+    loss  real violations   naive misses            aware flags         of which Fp    clean    incon.         
+    0.00              122              0     0.0%           122   100.0%         0       78         0     0.0%
+    0.10              116             12    10.3%           116   100.0%         0       84        61    72.6%
+    0.25              121             32    26.4%           121   100.0%         0       79        79   100.0%
+    0.50              135             69    51.1%           135   100.0%         0       65        65   100.0%
+  A monitor that sums only what reported cannot distinguish a small
+  aggregate from a large one it half observed. Flagging the gap is the
+  difference between 'no violation' and 'no evidence'.
+
+==========================================================================
+4. COMPOSITION NECESSITY (empirical, not definitional)
+==========================================================================
+  per-device-legal dispatches violating an aggregate limit,
+  as a function of fleet nameplate:
+      DER kW  fleet kW  penetration   violating          Wilson95
+         140      1820          49%      0/500   0.0%   [0.0, 0.8]
+         280      3640          98%    315/500  63.0%   [58.7, 67.1]
+         420      5460         147%    453/500  90.6%   [87.7, 92.9]
+         560      7280         196%    486/500  97.2%   [95.4, 98.3]
+         700      9100         245%    497/500  99.4%   [98.3, 99.8]
+  at the modelled 140 kW rating the aggregate constraint does not bind: 0/500
+    (this is the rate a per-device control would pass unchallenged --
+     an empirical quantity, not the definitional observation that a
+     per-device check cannot see an aggregate)
+
+  configuration             missed   false pos
+  phi_S only               385/385       0/115 
+  phi_T only               258/385       0/115 
+  phi_Sigma only           250/385       0/115 
+  S x T                    258/385       0/115 
+  S x Sigma                250/385       0/115 
+  T x Sigma                123/385       0/115 
+  all three                123/385       0/115 
+
+==========================================================================
+5. SENSITIVITY TO TOPOLOGY ERROR
+==========================================================================
+     switch-state error rate   verdict agreement
+                        0.00              100.0%
+                        0.05               81.0%
+                        0.10               67.5%
+                        0.20               46.5%
+  Reachability verdicts are only as good as the connectivity model;
+  this quantifies how good it has to be.
+
+==========================================================================
+6. SCALING AND OVERHEAD
+==========================================================================
+      DERs   buses   mean us/event    p95 us
+        13      33          1312.1    1368.7
+        50      33          2109.4    2154.3
+       200      33          4792.9    4952.2
+      1000      33         18280.3   18748.7
+  NOTE: unlike the mission instantiation, cost here is dominated by the
+  per-segment reachability traversal, which is independent of the DER
+  count -- 13 DERs already cost most of what 200 do. The DER population
+  adds a sub-linear term on top. The obvious optimisation is to cache
+  downstream sets per topology and invalidate them on a switch change,
+  which we have NOT done: these are unoptimised figures.

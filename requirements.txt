@@ -1,0 +1,8 @@
+# Versions used to produce the reference results (Python 3.14).
+pandapower==3.5.4
+pandas==2.3.3
+networkx==3.6.1
+numpy==2.4.6
+scipy==1.18.0
+# only for the five-engine comparison (make engines)
+moonlight==0.3.1

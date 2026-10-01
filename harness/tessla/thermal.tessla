@@ -1,0 +1,49 @@
+# =============================================================================
+# Time-integrated thermal loading of a distribution feeder segment.
+#
+# A conductor's rating is duration-dependent: it may carry its short-term
+# rating briefly and only its continuous rating sustained. The constraint is
+# therefore a moving-window integral, not an instantaneous comparison. That
+# is an accumulative quantitative property, which is what a stream language
+# is for and what neither of the other two engines can express: DejaVu's BDD
+# encoding compares data for equality only, and MFOTL's decision procedure is
+# not built around an unbounded accumulating aggregate.
+#
+# One instance is deployed per segment. `load` is the summed dispatch through
+# the segment, computed outside by the reachability traversal; TeSSLa
+# discharges the temporal-quantitative part, not the spatial part.
+# =============================================================================
+
+in load : Events[Float]
+
+def WIN   : Int   = 5        # samples in the thermal window
+def CONT  : Float = 600.0    # continuous rating, kW
+def SHORT : Float = 900.0    # short-term rating, kW
+
+# bounded history of the last WIN samples
+def hist : Events[List[Float]] =
+  fold(load, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= WIN
+    then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+
+def win_sum : Events[Float] =
+  slift1(hist, (h: List[Float]) =>
+    List.fold(h, 0.0, (a: Float, b: Float) => a +. b))
+
+def win_n : Events[Int] = slift1(hist, (h: List[Float]) => List.size(h))
+
+def win_mean : Events[Float] =
+  slift2(win_sum, win_n, (s: Float, n: Int) => s /. intToFloat(n))
+
+def inst_ok  : Events[Bool] = slift1(load,     (p: Float) => p <=. SHORT)
+def integ_ok : Events[Bool] = slift1(win_mean, (m: Float) => m <=. CONT)
+
+# four-valued verdict, same encoding as the CSR L1 monitor
+#  0 SAT, 2 PUNSAT (sustained overload), 3 UNSAT (instantaneous breach)
+def verdict : Events[Int] =
+  slift2(inst_ok, integ_ok, (i: Bool, g: Bool) =>
+    if !i then 3 else if !g then 2 else 0)
+
+out win_mean
+out verdict

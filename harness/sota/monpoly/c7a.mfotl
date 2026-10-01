@@ -1,0 +1,1 @@
+(a <- AVG v; ONCE[0,4] (tp(i) AND load(v))) AND a > 300.0

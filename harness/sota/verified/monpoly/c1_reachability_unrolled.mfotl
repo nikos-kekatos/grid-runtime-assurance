@@ -1,0 +1,6 @@
+LET R1(x) = x = "b2" AND closed("b1","b2") IN
+LET R2(x) = R1(x) OR (EXISTS y. R1(y) AND closed(y,x)) IN
+LET R3(x) = R2(x) OR (EXISTS y. R2(y) AND closed(y,x)) IN
+LET down(d) = EXISTS x. R3(x) AND at(d,x) IN
+LET tot(t) = t <- SUM v (down(d) AND disp(d,v)) IN
+EXISTS t. tot(t) AND t > 150.0

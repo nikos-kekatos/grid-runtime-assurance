@@ -1,0 +1,6 @@
+0: cov = ("agg1", "p1")
+1: cov = ("agg1", "p2")
+2: cov = ("agg1", "p3")
+3: cov = ("agg1", "p1")
+4: cov = ("agg1", "p2")
+5: pub = "agg1"

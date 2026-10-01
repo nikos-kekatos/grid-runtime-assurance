@@ -1,0 +1,5 @@
+signal { bool marked; bool trav; bool disallowed; }
+space { edges { real hop; } }
+domain boolean;
+formula containment =
+  ! ( marked & ( disallowed | ( trav reach(hop)[0.0, inf] ( disallowed & trav ) ) ) );

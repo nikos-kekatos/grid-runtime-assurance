@@ -1,0 +1,2 @@
+prop kanon :
+  Forall a . pub(a) -> (exists p1 . exists p2 . exists p3 . exists p4 . exists p5 . (P covers(a,p1) & P covers(a,p2) & P covers(a,p3) & P covers(a,p4) & P covers(a,p5) & !(p1 = p2) & !(p1 = p3) & !(p1 = p4) & !(p1 = p5) & !(p2 = p3) & !(p2 = p4) & !(p2 = p5) & !(p3 = p4) & !(p3 = p5) & !(p4 = p5)))

@@ -1,0 +1,1 @@
+(c <- CNT i; ONCE[0,9] (tp(i) AND (EXISTS x, y, z. ((sp(z) AND (PREVIOUS sp(y)) AND (PREVIOUS PREVIOUS sp(x)) AND (z - y > 0.0) AND (x - y > 0.0)) OR (sp(z) AND (PREVIOUS sp(y)) AND (PREVIOUS PREVIOUS sp(x)) AND (y - z > 0.0) AND (y - x > 0.0)))))) AND c >= 6

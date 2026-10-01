@@ -1,0 +1,12 @@
+in ev : Events[(String, Float)]
+def st : Events[Map[String, Float]] =
+  fold(ev, Map.empty[String, Float], (m: Map[String, Float], e: (String, Float)) =>
+    Map.add(m, e._1, e._2))
+def prevst : Events[Map[String, Float]] = last(st, ev)
+def verdict : Events[Int] = slift2(ev, prevst,
+  (e: (String, Float), m: Map[String, Float]) =>
+    if Map.contains(m, e._1) then
+      (if e._2 -. Map.get(m, e._1) >. 50.0 || Map.get(m, e._1) -. e._2 >. 50.0
+       then 3 else 0)
+    else 0)
+out verdict

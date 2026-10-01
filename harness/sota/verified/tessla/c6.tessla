@@ -1,0 +1,15 @@
+in cov : Events[(String, String)]
+in pub : Events[String]
+# Count DISTINCT principals per aggregate, not covers events: keep the set of
+# principals seen for each aggregate and take its size.
+def st : Events[Map[String, Set[String]]] =
+  fold(cov, Map.empty[String, Set[String]],
+       (m: Map[String, Set[String]], c: (String, String)) =>
+         Map.add(m, c._1,
+           Set.add(if Map.contains(m, c._1) then Map.get(m, c._1)
+                   else Set.empty[String], c._2)))
+def sm : Events[Map[String, Set[String]]] = last(st, pub)
+def verdict : Events[Int] = slift2(pub, sm,
+  (a: String, m: Map[String, Set[String]]) =>
+    if Map.contains(m, a) && Set.size(Map.get(m, a)) >= 5 then 0 else 3)
+out verdict

@@ -1,0 +1,237 @@
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{60.0}}, {{64.0}}, {{66.0}}, {{65.0}}, {{65.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{1.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 0.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 0.0}}, {{0.0, 1.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 0.0, 0.0}}, {{1.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 0.0, 1.0}}}
+times = new double[]{0.0}
+graph = new double[][][]{{{0.0, 1.0, 1.0}, {1.0, 2.0, 1.0}, {2.0, 3.0, 1.0}, {3.0, 4.0, 1.0}, {1.0, 0.0, 1.0}, {2.0, 1.0, 1.0}, {3.0, 2.0, 1.0}, {4.0, 3.0, 1.0}}}
+signalTimeArray = new double[]{0.0}
+signalValues = new double[][][]{{{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{0.0, 1.0, 0.0}}, {{1.0, 1.0, 1.0}}}
+====================================================================================================
+WHICH ENGINE TAKES WHICH CLAUSE
+====================================================================================================
+one shared workload: 200 intervals, 8 resources, 5 of them behind the monitored segment
+
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+clauseaspect   what it needs                                 MoonLight    MonPoly     DejaVu     TeSSLa      RTAMT
+------------------------------------------------------------------------------------------------------------------
+C1    phi_S    reachability over the graph, then a SUM ove          --       host         --       host         --
+C2    phi_S    STREL reach over the two-sorted graph            native         --         --         --         --
+C3    phi_S    reachability to an energised source              native         --         --         --         --
+C4    phi_T    first-order quantification AND a metric pas          --     native     native     native       host
+C5    phi_T    previous value of a numeric signal, per res        host     native         --     native       host
+C6    phi_Sigmacounting over an unbounded data domain               --     native     native     native         --
+C7    accum.   mean over a moving window                            --     native         --     native         --
+C8    accum.   count of events within a time window                 --     native         --     native         --
+C9    accum.   count of direction reversals over a sample           --     native         --     native         --
+
+AGREEMENT WITH THE REFERENCE, where the engine produced verdicts
+----------------------------------------------------------------------------------------------------
+  MonPoly   C1  200/200 time points     1.79s
+  MonPoly   C4  200/200 time points     0.17s
+  MonPoly   C5  200/200 time points     0.18s
+  MonPoly   C6  200/200 time points     0.19s
+  MonPoly   C7  200/200 time points     0.35s
+  MonPoly   C8  200/200 time points     0.17s
+  MonPoly   C9  200/200 time points     0.18s
+  TeSSLa    C1  200/200 time points     2.82s
+  TeSSLa    C7  200/200 time points     2.54s
+  RTAMT     C4  200/200 time points     0.02s
+  RTAMT     C5  200/200 time points     0.02s
+
+WHAT EACH CELL COST, in the engine's own words
+----------------------------------------------------------------------------------------------------
+
+MoonLight
+  C1 --     the grammar admits only the boolean and minmax domains, neither additive; on five resources totalling 320 kW against a 300 kW rating `somewhere` returns robustness -234, which is max(kw) - rating and reports the clause SATISFIED
+  C2 native  reach over the graph is the clause itself; agrees with the reference on 25 of 25 configurations
+  C3 native  observability is the same reach, asked of an energised source rather than a disallowed domain
+  C4 --     no first-order quantification: STREL is propositional over node signals, so resources must be enumerated by the host
+  C5 HOST   STREL carries STL's temporal operators, so the bound is statable per resource once the host enumerates resources
+  C6 --     no counting over a data domain
+  C7 --     no aggregation over time: STL's temporal operators are min and max over the window, never a mean
+  C8 --     no counting of events in a window
+  C9 --     no counting of reversals
+
+MonPoly
+  C1 HOST   SUM over the reachable set is native and preserves multiplicity; what the host must supply is the reachable set itself, since MFOTL has no transitive closure
+  C2 --     reachability is a transitive closure and MFOTL has none; a fixed set of hops can be spelled out as a disjunction, but a feeder that reconfigures changes which set that is
+  C3 --     reachability is a transitive closure and MFOTL has none; a fixed set of hops can be spelled out as a disjunction, but a feeder that reconfigures changes which set that is
+  C4 native  quantification over resources and the metric window are both in the logic
+  C5 native  PREVIOUS binds the earlier setpoint of the SAME resource and arithmetic on bound variables is allowed
+  C6 native  CNT decides the cohort size from the premise facts; the premises are distinct, so set semantics does not bite here
+  C7 native  AVG under ONCE states the moving-window mean directly, which no signal logic can; but the mean and the instantaneous bound cannot be conjoined in one formula (as one disjunction: The formula is NOT monitorable. Use the -check or -verbose f), so the clause runs as two monitors combined outside the logic
+  C8 native  CNT under ONCE counts operations in the window; operations carry distinct identifiers, so no collapse
+  C9 native  CNT under ONCE counts reversals in the window; the builtin tp supplies the identifier that keeps repeated reversals distinct, and the disjunction is distributed by hand because MonPoly does not rewrite under an aggregation
+
+DejaVu
+  C1 --     data is BDD-encoded for equality, so magnitudes cannot be compared and nothing can be summed
+  C2 --     no graph, no spatial operator
+  C3 --     no graph, no spatial operator
+  C4 native  DejaVu 2.1 has metric past operators. With P[<=4] over a log whose filename carries .timed. and whose last field is the timestamp, the deadline is stated in the logic: 514 violating events over 188 intervals, 200/200 agreement with the reference. The non-metric rendering run here reports 48 against 188 real ones, which measures the encoding and not the logic; see sota/verified/dejavu/c4.qtl
+  C5 --     a ramp bound compares magnitudes, which the BDD encoding does not support
+  C6 native  k is FIXED, so no aggregation operator is needed: k nested existentials with pairwise disequality state the cohort bound in first-order logic. Verified 84/84 against the reference, 200/200 agreement; see sota/verified/dejavu/c6.qtl
+  C7 --     no arithmetic and no aggregation over a window
+  C8 --     a fixed-threshold count is expressible as nested existentials with pairwise disequality, as for C6, but at 13 existentials and 78 disequalities the BDD does not converge here; rejected on practical grounds, not on expressiveness
+  C9 --     no arithmetic on signal values
+
+TeSSLa
+  C1 HOST   arithmetic over streams sums the reachable resources without collapsing equal values, unlike the relational encoding; but which resources are reachable is a graph question the host must answer
+  C2 --     no graph and no spatial operator
+  C3 --     no graph and no spatial operator
+  C4 native  metric windows are expressible over stream time and the consent map is maintained in-spec with Map[String,Int], so no host enumeration is needed; verified 200/200 against the reference, sota/verified/tessla/c4.tessla
+  C5 native  the per-resource previous value is held in a Map keyed on the resource identifier, so no host enumeration is needed; verified 200/200, sota/verified/tessla/c5.tessla
+  C6 native  premises per aggregate are counted in-spec with a Map keyed on an unbounded domain of aggregate identifiers; verified 200/200, sota/verified/tessla/c6.tessla
+  C7 native  the moving-window mean is what a stream language is for
+  C8 native  counting in a window by keeping the last B+1 timestamps and testing their span; over 24 operations the budget is first exceeded at operation 16
+  C9 native  direction reversals counted over a sample window; hunting first declared at sample 24
+
+RTAMT
+  C1 --     SUM over a set of resources; STL has no aggregation and no graph
+  C2 --     reachability over a graph; STL has no spatial operator
+  C3 --     reachability to an energised source; no spatial operator
+  C4 HOST   metric window native; quantification replaced by one monitor per resource, which needs the domain finite and known in advance
+  C5 HOST   `kw - prev(kw)` is rejected (1:10: Syntax ERROR, missing ')' at '-'); the host must supply the lagged signal, and the monitor is replicated per resource
+  C6 --     COUNT over an unbounded domain of premises; no counting, no quantification
+  C7 --     the instantaneous bound is native, but the window mean is an aggregation STL has no operator for, so the clause as a whole cannot be stated and no host computation supplies it
+  C8 --     COUNT of events in a window; no counting operator
+  C9 --     COUNT of direction reversals in a window; no counting operator
+
+====================================================================================================
+SET SEMANTICS AND THE AGGREGATE CLAUSE
+====================================================================================================
+  independent setpoints              0 of 182 real violations missed (  0.0%)
+  fleet answering one signal        76 of 128 real violations missed ( 59.4%)
+  The relational encoding of an aggregate constraint under-counts
+  whenever two resources carry the same setpoint, and it fails
+  silently and in the unsafe direction.

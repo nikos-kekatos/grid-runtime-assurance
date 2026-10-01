@@ -1,0 +1,1 @@
+(c <- CNT i; ONCE[0,24] op(i)) AND c > 12

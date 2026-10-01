@@ -1,0 +1,1 @@
+(s <- SUM v; (setpoint(d,v) AND down(d))) AND s > 300.0

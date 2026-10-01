@@ -1,0 +1,24 @@
+# Quantities retracted during revision. Each must NOT appear in chapter.tex
+# except inside the passage that retracts it. Run: make retracted
+# Format: <pattern>  # <why>.  Patterns may contain spaces; chapter.tex is
+# normalised (math delimiters stripped) before searching.
+59.2                # reconfiguration, missed violations
+5.8%                # reconfiguration, false alarms
+31.3                # reconfiguration, earlier protocol
+23.5                # reconfiguration, earlier protocol
+75.5                # composition necessity, generation-only clause
+302/400             # composition necessity
+75.0%               # radial-only variant
+6831                # radial-only variant, configurations sampled
+188/291             # ablation
+193/291             # ablation
+201/291             # ablation
+90/291              # ablation
+98/291              # ablation
+103/291             # ablation
+103, 98 and 90      # ablation, prose form that defeated the literal grep
+of the 291          # ablation, prose form
+65% of trials       # reconfiguration, unsourced disagreement rate
+five of the six     # DejaVu, unsourced clause count
+154 of the 315      # superseded single-stub attribution
+63.0%               # superseded penetration sweep

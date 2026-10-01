@@ -1,0 +1,1 @@
+(s <- SUM v; d (setpoint(d,v)))

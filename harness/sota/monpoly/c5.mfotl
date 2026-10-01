@@ -1,0 +1,1 @@
+EXISTS d, v, w. setpoint(d,v) AND (PREVIOUS setpoint(d,w)) AND ((v - w > 50.0) OR (w - v > 50.0))

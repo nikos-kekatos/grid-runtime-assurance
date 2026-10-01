@@ -1,0 +1,18 @@
+in sp : Events[Float]
+def W : Int = 10
+def prevsp : Events[Float] = last(sp, sp)
+def delta : Events[Float] = slift2(sp, prevsp, (c: Float, p: Float) => c -. p)
+def dir : Events[Int] = slift1(delta, (x: Float) =>
+  if x >. 0.0 then 1 else if x <. 0.0 then -1 else 0)
+def pdir : Events[Int] = last(dir, dir)
+def rev : Events[Int] = slift2(dir, pdir, (c: Int, p: Int) =>
+  if c != 0 && p != 0 && c != p then 1 else 0)
+def rh : Events[List[Int]] =
+  fold(rev, List.empty[Int], (acc: List[Int], x: Int) =>
+    if List.size(acc) >= W then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+def rc : Events[Int] = slift1(rh, (h: List[Int]) =>
+  List.fold(h, 0, (a: Int, b: Int) => a + b))
+def verdict : Events[Int] = slift1(rc, (k: Int) =>
+  if k >= 6 then 3 else 0)
+out verdict

@@ -1,0 +1,47 @@
+[
+ {
+  "frac": 0.25,
+  "pen": 91.96540376850605,
+  "nviol": 0,
+  "solo": 0,
+  "med_ders": 0,
+  "min_cohort_min": null,
+  "min_cohort_med": null
+ },
+ {
+  "frac": 0.5,
+  "pen": 183.9308075370121,
+  "nviol": 1,
+  "solo": 0,
+  "med_ders": 4,
+  "min_cohort_min": 4,
+  "min_cohort_med": 4
+ },
+ {
+  "frac": 0.75,
+  "pen": 275.89621130551814,
+  "nviol": 283,
+  "solo": 0,
+  "med_ders": 4,
+  "min_cohort_min": 2,
+  "min_cohort_med": 4
+ },
+ {
+  "frac": 0.9,
+  "pen": 331.0754535666218,
+  "nviol": 427,
+  "solo": 0,
+  "med_ders": 5,
+  "min_cohort_min": 2,
+  "min_cohort_med": 3
+ },
+ {
+  "frac": 1.0,
+  "pen": 367.8616150740242,
+  "nviol": 471,
+  "solo": 0,
+  "med_ders": 5,
+  "min_cohort_min": 2,
+  "min_cohort_med": 2
+ }
+]

@@ -1,0 +1,4 @@
+signal { real kw; }
+space { edges { real hop; } }
+domain minmax;
+formula agg = somewhere(hop)[0.0, 100.0] (kw > 300.0);

@@ -1,0 +1,4 @@
+signal { bool marked; bool trav; bool bad; }
+space { edges { real hop; } }
+domain boolean;
+formula contain = ! ( marked & ( bad | ( trav reach(hop)[0.0, 100.0] ( bad & trav ) ) ) );

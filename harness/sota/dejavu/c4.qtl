@@ -1,0 +1,1 @@
+prop consent_ever : forall d . big(d) -> P consent(d)

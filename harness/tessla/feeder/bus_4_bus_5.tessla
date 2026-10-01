@@ -1,0 +1,30 @@
+# Time-integrated thermal loading, segment bus_4-bus_5
+# continuous rating 3556.8 kW, short-term rating 5335.2 kW, window 5 samples
+in load : Events[Float]
+
+def WIN   : Int   = 5
+def CONT  : Float = 3556.8
+def SHORT : Float = 5335.2
+
+def hist : Events[List[Float]] =
+  fold(load, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= WIN
+    then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+
+def win_sum : Events[Float] =
+  slift1(hist, (h: List[Float]) =>
+    List.fold(h, 0.0, (a: Float, b: Float) => a +. b))
+def win_n : Events[Int] = slift1(hist, (h: List[Float]) => List.size(h))
+def win_mean : Events[Float] =
+  slift2(win_sum, win_n, (s: Float, n: Int) => s /. intToFloat(n))
+
+def inst_ok  : Events[Bool] = slift1(load,     (p: Float) => p <=. SHORT)
+def integ_ok : Events[Bool] = slift1(win_mean, (m: Float) => m <=. CONT)
+
+# 0 SAT, 2 PUNSAT (sustained overload), 3 UNSAT (instantaneous breach)
+def verdict : Events[Int] =
+  slift2(inst_ok, integ_ok, (i: Bool, g: Bool) =>
+    if !i then 3 else if !g then 2 else 0)
+
+out verdict

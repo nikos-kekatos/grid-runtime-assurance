@@ -1,0 +1,1 @@
+EXISTS d, v. setpoint(d,v) AND v > 100.0 AND NOT (ONCE[0,4] consent(d))

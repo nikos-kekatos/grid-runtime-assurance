@@ -1,0 +1,36 @@
+in op : Events[Float]
+
+def BUDGET : Int   = 12
+def WARN   : Int   = 9
+def WIN    : Float = 86400.0
+
+def histB : Events[List[Float]] =
+  fold(op, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= BUDGET + 1
+    then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+
+def histW : Events[List[Float]] =
+  fold(op, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= WARN + 1
+    then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+
+def spanB : Events[Float] =
+  slift1(histB, (h: List[Float]) =>
+    if List.size(h) <= BUDGET then WIN *. 2.0
+    else List.last(h) -. List.head(h))
+
+def spanW : Events[Float] =
+  slift1(histW, (h: List[Float]) =>
+    if List.size(h) <= WARN then WIN *. 2.0
+    else List.last(h) -. List.head(h))
+
+def overBudget : Events[Bool] = slift1(spanB, (s: Float) => s <=. WIN)
+def overWarn   : Events[Bool] = slift1(spanW, (s: Float) => s <=. WIN)
+
+def verdict : Events[Int] =
+  slift2(overBudget, overWarn, (b: Bool, w: Bool) =>
+    if b then 3 else if w then 2 else 0)
+
+out verdict

@@ -1,0 +1,11 @@
+digraph G {
+  0 [shape=octagon, color=red, label="0 : forall d . big(d) -> P consent(d)"]
+  1 [shape=box, label="1 : big(d) -> P consent(d)"]
+  2 [shape=box, label="2 : big(d)"]
+  3 [shape=box, label="3 : P consent(d)"]
+  4 [shape=box, label="4 : consent(d)"]
+  3 -> 4
+  1 -> 2
+  1 -> 3
+  0 -> 1
+}

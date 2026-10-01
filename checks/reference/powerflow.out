@@ -1,0 +1,30 @@
+numba cannot be imported and numba functions are disabled.
+Probably the execution is slow.
+Please install numba to gain a massive speedup.
+(or if you prefer slow execution, set the flag numba=False to avoid this warning!)
+==============================================================================
+CONNECTIVITY PROXY vs REAL POWER FLOW (pandapower as the baseline)
+==============================================================================
+thermal limit 100% line loading; voltage band [0.95, 1.05] pu
+
+case33bw (IEEE 33-bus, Baran & Wu)   buses 33  lines 37  DERs 16  scenarios 300
+   generation-only proxy    thermal recall 100.0%   false alarms  34.3%   (violations 201, clean 99)
+   net (load - gen) proxy   thermal recall  99.0%   false alarms   0.0%   (violations 201, clean 99)
+   PTDF-weighted            thermal recall  99.0%   false alarms   0.0%   (violations 201, clean 99)
+   voltage violations        193 of 300   invisible to any connectivity proxy: 76 (25.3% of scenarios)
+
+CIGRE MV benchmark   buses 15  lines 15  DERs 19  scenarios 131
+   generation-only proxy    thermal recall  96.8%   false alarms 100.0%   (violations 124, clean 7)
+   net (load - gen) proxy   thermal recall  98.4%   false alarms   0.0%   (violations 124, clean 7)
+   PTDF-weighted            thermal recall  98.4%   false alarms   0.0%   (violations 124, clean 7)
+   voltage violations        101 of 131   invisible to any connectivity proxy: 0 (0.0% of scenarios)
+
+mv_oberrhein (real German MV)   buses 179  lines 181  DERs 226  scenarios 300
+   generation-only proxy    thermal recall 100.0%   false alarms  68.4%   (violations 113, clean 187)
+   net (load - gen) proxy   thermal recall 100.0%   false alarms  41.2%   (violations 113, clean 187)
+   PTDF-weighted            thermal recall 100.0%   false alarms  40.6%   (violations 113, clean 187)
+   voltage violations         51 of 300   invisible to any connectivity proxy: 0 (0.0% of scenarios)
+
+Recall is the fraction of real thermal violations the proxy catches;
+false alarms are clean scenarios it refuses. Voltage is reported
+separately because no connectivity computation can decide it.

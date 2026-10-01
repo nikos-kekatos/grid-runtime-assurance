@@ -1,0 +1,1 @@
+(c <- CNT p; a covers(a,p)) AND c < 5

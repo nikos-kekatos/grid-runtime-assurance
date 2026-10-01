@@ -1,0 +1,27 @@
+==============================================================================
+VOLTAGE: LINEARISED SENSITIVITIES vs AC SOLUTION
+==============================================================================
+band [0.95, 1.05] pu; sensitivities taken once at the base point
+
+case33bw (IEEE 33-bus)   buses 33  DERs 16
+   voltage violations 213 of 300
+   recall       98.1%   (catches 209 of 213 real band violations)
+   false alarm  24.1%   (21 of 87 clean scenarios refused)
+   stratified agreement (violating / clean scenarios separately):
+      near  <=1x   viol  94.4% (n=54)   clean  91.9% (n=37)
+      mid   <=2x   viol  98.2% (n=57)   clean  64.0% (n=50)
+      far   >2x    viol 100.0% (n=102)   clean   n/a (n=0)
+   as a filter on an AC solve: 234 solves for 300 scenarios (78%), 4 violation(s) never escalated
+
+CIGRE MV benchmark   buses 15  DERs 19
+   voltage violations 78 of 108
+   recall      100.0%   (catches 78 of 78 real band violations)
+   false alarm  60.0%   (18 of 30 clean scenarios refused)
+   stratified agreement (violating / clean scenarios separately):
+      near  <=1x   viol 100.0% (n=61)   clean  40.0% (n=30)
+      mid   <=2x   viol 100.0% (n=17)   clean   n/a (n=0)
+   as a filter on an AC solve: 96 solves for 108 scenarios (89%), 0 violation(s) never escalated
+
+The sensitivity matrix is built once per topology and reused, so this
+is the same computational shape as the PTDF clause: a matrix product
+per evaluation, no solve in the loop.

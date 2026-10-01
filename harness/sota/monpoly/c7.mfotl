@@ -1,0 +1,1 @@
+((a <- AVG v; ONCE[0,4] load(v)) AND a > 300.0) OR (EXISTS v. load(v) AND v > 450.0)

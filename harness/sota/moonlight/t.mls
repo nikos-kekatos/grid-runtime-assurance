@@ -1,0 +1,4 @@
+signal { real kw; }
+space { edges { real hop; } }
+domain minmax;
+formula agg = kw;

@@ -1,0 +1,3 @@
+in load : Events[Float]
+def verdict : Events[Int] = slift1(load, (p: Float) => if p >. 300.0 then 3 else 0)
+out verdict

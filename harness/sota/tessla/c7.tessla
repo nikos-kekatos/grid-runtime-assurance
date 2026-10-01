@@ -1,0 +1,14 @@
+in load : Events[Float]
+def WIN : Int = 5
+def hist : Events[List[Float]] =
+  fold(load, List.empty[Float], (acc: List[Float], x: Float) =>
+    if List.size(acc) >= WIN then List.append(List.tail(acc), x)
+    else List.append(acc, x))
+def wsum : Events[Float] = slift1(hist, (h: List[Float]) =>
+  List.fold(h, 0.0, (a: Float, b: Float) => a +. b))
+def wn : Events[Int] = slift1(hist, (h: List[Float]) => List.size(h))
+def wmean : Events[Float] = slift2(wsum, wn, (s: Float, k: Int) =>
+  s /. intToFloat(k))
+def verdict : Events[Int] = slift2(load, wmean, (p: Float, m: Float) =>
+  if p >. 450.0 then 3 else if m >. 300.0 then 3 else 0)
+out verdict

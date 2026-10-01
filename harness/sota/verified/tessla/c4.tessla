@@ -1,0 +1,14 @@
+in cons : Events[(String, Int)]
+in sp   : Events[(String, Float, Int)]
+# last authorised consent time per resource, maintained IN the specification
+def cmap : Events[Map[String, Int]] =
+  fold(cons, Map.empty[String, Int], (m: Map[String, Int], c: (String, Int)) =>
+    Map.add(m, c._1, c._2))
+def cm : Events[Map[String, Int]] = last(cmap, sp)
+def verdict : Events[Int] = slift2(sp, cm,
+  (e: (String, Float, Int), m: Map[String, Int]) =>
+    if e._2 >. 100.0 then
+      (if Map.contains(m, e._1) && e._3 - Map.get(m, e._1) <= 4
+       then 0 else 3)
+    else 0)
+out verdict

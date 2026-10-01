@@ -1,0 +1,57 @@
+{
+ "n": 500,
+ "nviol": 283,
+ "panelA": [
+  {
+   "loss": 0.0,
+   "miss": 0,
+   "pres": 0
+  },
+  {
+   "loss": 0.1,
+   "miss": 43,
+   "pres": 153
+  },
+  {
+   "loss": 0.25,
+   "miss": 113,
+   "pres": 207
+  },
+  {
+   "loss": 0.5,
+   "miss": 211,
+   "pres": 217
+  },
+  {
+   "loss": 0.9,
+   "miss": 281,
+   "pres": 217
+  }
+ ],
+ "panelB": [
+  {
+   "loss": 0.0,
+   "wrong": 0,
+   "pressed": 0,
+   "inconclusive": 0
+  },
+  {
+   "loss": 0.1,
+   "wrong": 6,
+   "pressed": 54,
+   "inconclusive": 54
+  },
+  {
+   "loss": 0.25,
+   "wrong": 13,
+   "pressed": 118,
+   "inconclusive": 118
+  },
+  {
+   "loss": 0.5,
+   "wrong": 31,
+   "pressed": 233,
+   "inconclusive": 233
+  }
+ ]
+}
