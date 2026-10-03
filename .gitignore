@@ -4,3 +4,5 @@ results/
 tools/
 .DS_Store
 .venv/
+.bsp/
+.scala-build/
